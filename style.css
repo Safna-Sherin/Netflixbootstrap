@@ -1,0 +1,166 @@
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: black;
+
+}
+
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(./background\ banner.jpg);
+    background-size: cover;
+    background-position: 50%;
+    height: 90vh;
+}
+
+/* nav bar*/ 
+nav img{
+    width: 13%;
+}
+
+.red-btn{
+    background: rgb(229,9,20);
+    color: #fff;
+    border: 0;
+    border-radius: 0.25rem;
+    padding: 5px 17px;
+}
+
+.red-btn:hover{
+    background-color:rgb(193, 17, 25) ;
+}
+/* main section*/
+.hero-title{
+    font-size: 3rem;
+    font-weight: 900;   
+}
+
+.hero-first-text{
+    font-size: 1.5rem;
+    font-weight: 400;    
+}
+
+.hero-second-text{
+    font-size: 1.25rem;
+    font-weight: 400; 
+    line-height: 1.875rem;   
+}
+
+
+/*Main section form*/
+form{
+    width: 60%;
+
+}
+form .form-floating{
+    width: 50%;
+}
+form #floatingInput{
+    color: #fff;
+
+}
+
+form .form-control:focus{
+    border-color: #fff;
+    box-shadow: none;
+    border-width: medium;
+}
+form label{
+    color: rgba(255 ,255,255,0.7);
+    margin-left: 10px;
+}
+.get-started-btn{
+    height: 60px;
+    font-size: 1.5rem;
+    padding-right: 25px;
+    padding-left: 25px;
+
+}
+/* Features section*/
+
+.section-title{
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.section-paragraph{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.features-section{
+    border-top: 5px solid #232323;
+}
+/*faq accordion*/
+
+.faq-sec h3{
+    font-weight: 600;
+    line-height: 1.875rem;
+}
+.faq-sec button{
+    color: #fff;
+    font-size: 24px;
+    font-weight: 400;
+}
+.faq-sec .accordion{
+    --bs-accordion-color: rgb(255,255,255);
+    --bs-accordion-bg: rgb(45,45,45);
+    --bs-accrdion-border-color: none;
+    --bs-accordion-border-radius: none;
+}
+.faq-sec{
+    border-top: 5px solid #232323;
+
+}
+
+/*  footer section*/
+
+footer{
+    border-top: 5px solid #232323;
+}
+footer p,footer a{
+    color: rgba(255,255,255,0.7);
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+
+footer ul{
+    padding-left: 0;
+}
+footer li{
+    list-style-type: none;
+}
+
+
+/*media query*/
+
+@media only screen and (max-width: 992px){
+    nav img{
+        width: 17%;
+    }
+    .hero-title,.section-title{
+        font-size: 2rem;
+        font-weight: 700;
+    }
+    .hero-first-text,.hero-second-text,.section-paragraph,.faq-sec h3{
+        font-size: 1.125rem;
+    }
+}
+@media only screen and (max-width: 768px){
+    nav img{
+        width: 25%;
+    }
+    header{
+        height: 100vh;
+    }
+    
+}
+@media only screen and (max-width: 576px){
+    nav img{
+        width: 35%;
+    }
+    header{
+        height: 110vh;
+    }
+    form .form-floating{
+        width: 90%;
+    }
+}
